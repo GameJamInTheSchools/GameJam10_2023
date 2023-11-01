@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://b71miyarh4aql"]
+
+[ext_resource type="SpriteFrames" uid="uid://d1kujscol0r1f" path="res://sprites/cowgirl.tres" id="1_adt3j"]
+[ext_resource type="Script" path="res://scripts/topdown_player.gd" id="1_ncntn"]
+[ext_resource type="PackedScene" uid="uid://bdwgt8xju2tc2" path="res://objects/pea_shooter.tscn" id="3_ekh4r"]
+[ext_resource type="PackedScene" uid="uid://hb2l04r6y7hv" path="res://objects/dialogue.tscn" id="4_h6h8a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgbgw"]
+size = Vector2(20, 31)
+
+[node name="topdown_player" type="CharacterBody2D"]
+script = ExtResource("1_ncntn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_adt3j")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_mgbgw")
+
+[node name="pea_shooter" parent="." instance=ExtResource("3_ekh4r")]
+
+[node name="dialogue" parent="." instance=ExtResource("4_h6h8a")]
+dialogue = Array[String](["Hello! I wonder what adventures I will get up to today?", "Maybe I will go defeat the villan and save the princess!"])
