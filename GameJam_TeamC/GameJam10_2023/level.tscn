@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://c4db1cowig3oi" path="res://sprites/default_tileset.tres" id="1_0veil"]
 [ext_resource type="PackedScene" uid="uid://4yaokftu64th" path="res://objects/wall.tscn" id="1_we4uo"]
-[ext_resource type="PackedScene" uid="uid://bbmc70n366wep" path="res://objects/platformer_player.tscn" id="2_0qvhq"]
+[ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="3_5eohi"]
 
 [node name="Level" type="Node2D"]
 
@@ -35,5 +35,5 @@ scale = Vector2(1, 8.36)
 position = Vector2(578, 325)
 zoom = Vector2(2, 2)
 
-[node name="Player" parent="." instance=ExtResource("2_0qvhq")]
-position = Vector2(580, 326)
+[node name="Player" parent="." instance=ExtResource("3_5eohi")]
+position = Vector2(579, 331)
