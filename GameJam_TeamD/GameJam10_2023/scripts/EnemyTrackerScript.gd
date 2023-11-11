@@ -11,5 +11,5 @@ func _process(delta):
 	if (get_children().size() <= 0):
 		self.self_modulate.a = 225
 
-func _on_scene_4_pressed():
+func _on_pressed():
 	get_tree().change_scene_to_file("res://objects/screens/title_screen.tscn")
