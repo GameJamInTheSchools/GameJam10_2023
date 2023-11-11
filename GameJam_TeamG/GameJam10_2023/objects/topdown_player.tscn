@@ -22,4 +22,5 @@ shape = SubResource("RectangleShape2D_mgbgw")
 [node name="pea_shooter" parent="." instance=ExtResource("3_ekh4r")]
 
 [node name="dialogue" parent="." instance=ExtResource("4_h6h8a")]
-dialogue = Array[String](["Hello! I wonder what adventures I will get up to today?", "Maybe I will go defeat the villan and save the princess!"])
+dialogue = Array[String](["alabaster:the news said theres going to be a 
+apocalypse i have to get ready", "alabaster: i have my pitchfork im ready for battle"])
