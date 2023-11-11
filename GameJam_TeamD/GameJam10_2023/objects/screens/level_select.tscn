@@ -15,58 +15,67 @@ script = ExtResource("1_txy0a")
 
 [node name="Scene 0" type="Button" parent="."]
 layout_mode = 0
-offset_left = 465.0
-offset_top = 29.0
-offset_right = 637.0
-offset_bottom = 96.0
+offset_left = 468.0
+offset_top = 56.0
+offset_right = 640.0
+offset_bottom = 123.0
 text = "Level 0"
 
 [node name="Scene 1" type="Button" parent="."]
 layout_mode = 0
-offset_left = 465.0
-offset_top = 106.0
-offset_right = 637.0
-offset_bottom = 173.0
+offset_left = 468.0
+offset_top = 133.0
+offset_right = 640.0
+offset_bottom = 200.0
 text = "Level 1"
 
 [node name="Scene 2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 465.0
-offset_top = 187.0
-offset_right = 637.0
-offset_bottom = 254.0
+offset_left = 468.0
+offset_top = 214.0
+offset_right = 640.0
+offset_bottom = 281.0
 text = "Level 2"
 
 [node name="Scene 3" type="Button" parent="."]
 layout_mode = 0
-offset_left = 465.0
-offset_top = 266.0
-offset_right = 637.0
-offset_bottom = 333.0
+offset_left = 468.0
+offset_top = 293.0
+offset_right = 640.0
+offset_bottom = 360.0
 text = "Level 3"
 
 [node name="Scene 4" type="Button" parent="."]
 layout_mode = 0
-offset_left = 465.0
-offset_top = 346.0
-offset_right = 637.0
-offset_bottom = 413.0
+offset_left = 468.0
+offset_top = 373.0
+offset_right = 640.0
+offset_bottom = 440.0
 text = "Level 4"
 
 [node name="Scene 5" type="Button" parent="."]
 layout_mode = 0
-offset_left = 465.0
-offset_top = 422.0
-offset_right = 637.0
-offset_bottom = 489.0
+offset_left = 467.0
+offset_top = 452.0
+offset_right = 639.0
+offset_bottom = 519.0
 text = "Level 5"
 
-[node name="Testing" type="Button" parent="."]
+[node name="Scene 6" type="Button" parent="."]
 layout_mode = 0
-offset_left = 465.0
-offset_top = 533.0
-offset_right = 637.0
-offset_bottom = 600.0
+offset_left = 468.0
+offset_top = 529.0
+offset_right = 640.0
+offset_bottom = 596.0
+text = "Level 6"
+
+[node name="Testing" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 464.0
+offset_top = 588.0
+offset_right = 636.0
+offset_bottom = 655.0
 text = "Testing"
 
 [connection signal="pressed" from="Scene 0" to="." method="_on_scene_0_pressed"]
@@ -75,4 +84,5 @@ text = "Testing"
 [connection signal="pressed" from="Scene 3" to="." method="_on_scene_3_pressed"]
 [connection signal="pressed" from="Scene 4" to="." method="_on_scene_4_pressed"]
 [connection signal="pressed" from="Scene 5" to="." method="_on_scene_5_pressed"]
+[connection signal="pressed" from="Scene 6" to="." method="_on_scene_6_pressed"]
 [connection signal="pressed" from="Testing" to="." method="_on_testing_pressed"]
