@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bivtm3du180x6"
-path="res://.godot/imported/32x32 topdown tileset Spreadsheet V1-1.png-2726e72c621e567896719f542b8066a6.ctex"
+path="res://.godot/imported/32x32 topdown tileset Spreadsheet V1-1.png-6fc787201a595e6b6e55c1c292bbe321.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/32x32 topdown tileset Spreadsheet V1-1.png"
-dest_files=["res://.godot/imported/32x32 topdown tileset Spreadsheet V1-1.png-2726e72c621e567896719f542b8066a6.ctex"]
+source_file="res://scripts/32x32 topdown tileset Spreadsheet V1-1.png"
+dest_files=["res://.godot/imported/32x32 topdown tileset Spreadsheet V1-1.png-6fc787201a595e6b6e55c1c292bbe321.ctex"]
 
 [params]
 
