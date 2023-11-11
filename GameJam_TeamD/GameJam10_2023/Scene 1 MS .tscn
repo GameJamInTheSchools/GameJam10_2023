@@ -1,16 +1,17 @@
-[gd_scene load_steps=10 format=3 uid="uid://dhy84ymv52c5q"]
+[gd_scene load_steps=11 format=3 uid="uid://dc5s4oeh764r7"]
 
 [ext_resource type="TileSet" uid="uid://c4db1cowig3oi" path="res://sprites/default_tileset.tres" id="1_nmbpf"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="2_7h2nu"]
 [ext_resource type="PackedScene" uid="uid://4yaokftu64th" path="res://objects/wall.tscn" id="3_i2olp"]
 [ext_resource type="Texture2D" uid="uid://c17lgtsulhkod" path="res://sprites/pictureLightMask_thumb.png" id="3_jthu5"]
 [ext_resource type="Script" path="res://scripts/DialogueScript.gd" id="5_70sij"]
-[ext_resource type="PackedScene" path="res://objects/attack enemy.tscn" id="6_fwnwg"]
+[ext_resource type="PackedScene" uid="uid://chcylrt0adxst" path="res://objects/attack enemy.tscn" id="6_fwnwg"]
+[ext_resource type="PackedScene" uid="uid://cu8bhui4dvtkv" path="res://objects/EnemyTracker.tscn" id="7_hl6le"]
 [ext_resource type="PackedScene" uid="uid://bbmc70n366wep" path="res://objects/platformer_player.tscn" id="7_t66kc"]
 [ext_resource type="AudioStream" uid="uid://3npy5tmpw2co" path="res://audio/creepy_old_Nov_11_2023_317_PM.mp3" id="8_5ndfl"]
 [ext_resource type="AudioStream" uid="uid://c4l7qow8niogq" path="res://audio/concrete-footsteps-6752.mp3" id="9_cyc6g"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(120, -16)
@@ -110,20 +111,26 @@ position = Vector2(24, -3)
 color = Color(0.164706, 0.14902, 0.211765, 1)
 script = ExtResource("5_70sij")
 
-[node name="attack enemy" parent="." instance=ExtResource("6_fwnwg")]
-position = Vector2(424, 124)
-
 [node name="Player2" parent="." instance=ExtResource("7_t66kc")]
 position = Vector2(342, 376)
 
-[node name="attack enemy2" parent="." instance=ExtResource("6_fwnwg")]
-position = Vector2(697, -25)
+[node name="EnemyTracker" parent="." instance=ExtResource("7_hl6le")]
+offset_left = 74.0
+offset_top = 142.0
+offset_right = 370.0
+offset_bottom = 282.0
 
-[node name="attack enemy3" parent="." instance=ExtResource("6_fwnwg")]
-position = Vector2(-110, 10)
+[node name="attack enemy2" parent="EnemyTracker" instance=ExtResource("6_fwnwg")]
+position = Vector2(623, -167)
 
-[node name="attack enemy4" parent="." instance=ExtResource("6_fwnwg")]
-position = Vector2(8, 419)
+[node name="attack enemy3" parent="EnemyTracker" instance=ExtResource("6_fwnwg")]
+position = Vector2(-184, -132)
+
+[node name="attack enemy4" parent="EnemyTracker" instance=ExtResource("6_fwnwg")]
+position = Vector2(-66, 277)
+
+[node name="attack enemy" parent="EnemyTracker" instance=ExtResource("6_fwnwg")]
+position = Vector2(350, -18)
 
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
 
