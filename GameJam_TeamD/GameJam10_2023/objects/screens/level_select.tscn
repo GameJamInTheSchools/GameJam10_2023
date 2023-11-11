@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://by7db3dsmo5gx"]
+[gd_scene load_steps=2 format=3 uid="uid://ccbe07sqp85w5"]
 
 [ext_resource type="Script" path="res://scripts/screens/level_select.gd" id="1_txy0a"]
 
@@ -15,37 +15,54 @@ script = ExtResource("1_txy0a")
 
 [node name="Scene 1" type="Button" parent="."]
 layout_mode = 0
-offset_left = 467.0
-offset_top = 135.0
-offset_right = 639.0
-offset_bottom = 202.0
+offset_left = 465.0
+offset_top = 57.0
+offset_right = 637.0
+offset_bottom = 124.0
 text = "Level 1"
 
 [node name="Scene 2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 468.0
-offset_top = 234.0
-offset_right = 640.0
-offset_bottom = 301.0
+offset_left = 465.0
+offset_top = 138.0
+offset_right = 637.0
+offset_bottom = 205.0
 text = "Level 2"
 
 [node name="Scene 3" type="Button" parent="."]
 layout_mode = 0
-offset_left = 469.0
-offset_top = 334.0
-offset_right = 641.0
-offset_bottom = 401.0
+offset_left = 465.0
+offset_top = 217.0
+offset_right = 637.0
+offset_bottom = 284.0
 text = "Level 3"
 
 [node name="Scene 4" type="Button" parent="."]
 layout_mode = 0
-offset_left = 470.0
-offset_top = 433.0
-offset_right = 642.0
-offset_bottom = 500.0
+offset_left = 465.0
+offset_top = 294.0
+offset_right = 637.0
+offset_bottom = 361.0
 text = "Level 4"
+
+[node name="Scene 5" type="Button" parent="."]
+offset_left = 465.0
+offset_top = 372.0
+offset_right = 637.0
+offset_bottom = 439.0
+text = "Level 5"
+
+[node name="Testing" type="Button" parent="."]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 533.0
+offset_right = 637.0
+offset_bottom = 600.0
+text = "Testing"
 
 [connection signal="pressed" from="Scene 1" to="." method="_on_scene_1_pressed"]
 [connection signal="pressed" from="Scene 2" to="." method="_on_scene_2_pressed"]
 [connection signal="pressed" from="Scene 3" to="." method="_on_scene_3_pressed"]
 [connection signal="pressed" from="Scene 4" to="." method="_on_scene_4_pressed"]
+[connection signal="pressed" from="Scene 5" to="." method="_on_scene_5_pressed"]
+[connection signal="pressed" from="Testing" to="." method="_on_testing_pressed"]

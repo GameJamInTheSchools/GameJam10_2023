@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
-var SPEED = 10.0
+var SPEED = 150.0
 var JUMP_SPEED = -400.0
 var GRAVITY = 980
 var animation_direction = Vector2.RIGHT
 
-var health = 3
+var health = 50
 
 func _ready():
 	Global.player = self
