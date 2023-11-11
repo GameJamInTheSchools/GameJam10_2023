@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cwobsampi8jpj"]
+[gd_scene load_steps=10 format=3 uid="uid://cwobsampi8jpj"]
 
 [ext_resource type="Texture2D" uid="uid://bivtm3du180x6" path="res://sprites/32x32 topdown tileset Spreadsheet V1-1.png" id="1_mwf3c"]
 [ext_resource type="Texture2D" uid="uid://dmtf5afts6ia5" path="res://sprites/16x16 roguelike tileset Spreadsheet 1-5.png" id="2_p0lrm"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="3_1bifr"]
+[ext_resource type="PackedScene" uid="uid://chcylrt0adxst" path="res://objects/attack enemy.tscn" id="4_444hd"]
+[ext_resource type="PackedScene" uid="uid://bihe0i1jwl1oo" path="res://objects/Boss Enemy.tscn" id="5_kksym"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w1ouk"]
 texture = ExtResource("1_mwf3c")
@@ -3567,3 +3569,22 @@ layer_0/tile_data = PackedInt32Array(786462, 393216, 24, 1179678, 393216, 24, 12
 
 [node name="Player" parent="." instance=ExtResource("3_1bifr")]
 position = Vector2(515, 209)
+
+[node name="attack enemy" parent="." instance=ExtResource("4_444hd")]
+position = Vector2(829, 293)
+
+[node name="attack enemy2" parent="." instance=ExtResource("4_444hd")]
+position = Vector2(832, 145)
+
+[node name="attack enemy3" parent="." instance=ExtResource("4_444hd")]
+position = Vector2(736, 89)
+
+[node name="attack enemy4" parent="." instance=ExtResource("4_444hd")]
+position = Vector2(862, 187)
+
+[node name="attack enemy5" parent="." instance=ExtResource("4_444hd")]
+position = Vector2(914, 184)
+
+[node name="attack enemy6" parent="." instance=ExtResource("5_kksym")]
+position = Vector2(14, 92)
+scale = Vector2(5, 5)
