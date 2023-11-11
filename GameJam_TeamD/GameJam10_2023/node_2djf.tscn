@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1x80ao5dwyp5"]
+[gd_scene load_steps=6 format=3 uid="uid://d1x80ao5dwyp5"]
 
 [ext_resource type="TileSet" uid="uid://c4db1cowig3oi" path="res://sprites/default_tileset.tres" id="1_3h373"]
 [ext_resource type="Texture2D" uid="uid://kxrw41ul3hj1" path="res://sprites/cowgirl_jump.png" id="2_voj5i"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="3_oho22"]
+[ext_resource type="PackedScene" uid="uid://cu8bhui4dvtkv" path="res://objects/EnemyTracker.tscn" id="4_e5uco"]
+[ext_resource type="PackedScene" uid="uid://chcylrt0adxst" path="res://objects/attack enemy.tscn" id="5_5jey3"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -22,4 +24,20 @@ position = Vector2(377, 252)
 texture = ExtResource("2_voj5i")
 
 [node name="Player" parent="." instance=ExtResource("3_oho22")]
+top_level = true
 position = Vector2(14, 273)
+
+[node name="EnemyTracker" parent="." instance=ExtResource("4_e5uco")]
+top_level = true
+offset_left = 283.0
+offset_top = 259.0
+offset_right = 579.0
+offset_bottom = 399.0
+
+[node name="attack enemy" parent="EnemyTracker" instance=ExtResource("5_5jey3")]
+top_level = true
+position = Vector2(225, 284)
+
+[node name="attack enemy2" parent="EnemyTracker" instance=ExtResource("5_5jey3")]
+top_level = true
+position = Vector2(461, 414)

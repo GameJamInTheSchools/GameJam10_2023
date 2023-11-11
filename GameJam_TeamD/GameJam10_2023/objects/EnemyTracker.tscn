@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://scripts/EnemyTrackerScript.gd" id="1_nittp"]
 
 [node name="EnemyTracker" type="Button"]
-visible = false
 offset_left = 412.0
 offset_top = 241.0
 offset_right = 708.0
