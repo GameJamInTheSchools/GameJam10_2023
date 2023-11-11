@@ -1,15 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://bphcxrdy04pnj"]
+[gd_scene load_steps=6 format=3 uid="uid://bphcxrdy04pnj"]
 
 [ext_resource type="Script" path="res://scripts/topdown_enemy.gd" id="1_5sx7s"]
 [ext_resource type="SpriteFrames" uid="uid://cxc6dtuhl1mqm" path="res://sprites/final_boss.tres" id="2_e8i8p"]
 [ext_resource type="PackedScene" uid="uid://baka1whmipi1y" path="res://objects/fireball_shooter.tscn" id="4_ealnk"]
-[ext_resource type="PackedScene" uid="uid://hb2l04r6y7hv" path="res://objects/dialogue.tscn" id="4_ynnmk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mgbgw"]
 size = Vector2(29, 32)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pv4ub"]
-radius = 107.201
+radius = 301.06
 
 [node name="Final Boss" type="CharacterBody2D"]
 script = ExtResource("1_5sx7s")
@@ -23,16 +22,13 @@ frame_progress = 0.595891
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_mgbgw")
 
-[node name="dialogue" parent="." instance=ExtResource("4_ynnmk")]
-dialogue = Array[String](["Hello! I wonder what adventures I will get up to today?", "Maybe I will go defeat the villan and save the princess!"])
+[node name="Final Boss" type="Area2D" parent="."]
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Final Boss"]
 shape = SubResource("CircleShape2D_pv4ub")
 
 [node name="fireball_shooter" parent="." instance=ExtResource("4_ealnk")]
 
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="area_entered" from="Final Boss" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Final Boss" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Final Boss" to="." method="_on_area_2d_body_exited"]

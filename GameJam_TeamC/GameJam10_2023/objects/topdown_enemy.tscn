@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://b33yptpp0ogko"]
+[gd_scene load_steps=6 format=3 uid="uid://b33yptpp0ogko"]
 
 [ext_resource type="Script" path="res://scripts/topdown_enemy.gd" id="1_v5upg"]
 [ext_resource type="SpriteFrames" uid="uid://mcjxoy4cwe4x" path="res://sprites/archer.tres" id="2_wri4d"]
-[ext_resource type="PackedScene" uid="uid://hb2l04r6y7hv" path="res://objects/dialogue.tscn" id="4_mg88c"]
 [ext_resource type="PackedScene" uid="uid://baka1whmipi1y" path="res://objects/fireball_shooter.tscn" id="4_r10hi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mgbgw"]
@@ -21,9 +20,6 @@ animation = &"run_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_mgbgw")
-
-[node name="dialogue" parent="." instance=ExtResource("4_mg88c")]
-dialogue = Array[String](["Hello! I wonder what adventures I will get up to today?", "Maybe I will go defeat the villan and save the princess!"])
 
 [node name="Area2D" type="Area2D" parent="."]
 

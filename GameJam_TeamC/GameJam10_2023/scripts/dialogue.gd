@@ -7,9 +7,9 @@ var TEXT_SPEED = 100
 var playing_dialogue = false
 var dialogue_index = 0
 
-func play_dialogue():
+func play_dialogue(index):
 	#start the dialogue at the beginning
-	set_dialogue_index(0)
+	set_dialogue_index(index)
 
 func set_dialogue_index(index):
 	#set the index of the dialogue
@@ -21,10 +21,12 @@ func set_dialogue_index(index):
 		$Textbox/RichTextLabel.text = dialogue[dialogue_index]
 		playing_dialogue = true
 		visible = true
+		Global.dialogue_playing = true
 	else:
 		#hide the text box
 		playing_dialogue = false
 		visible = false
+		Global.dialogue_playing = false
 
 func _process(delta):
 	if(playing_dialogue):
@@ -33,4 +35,6 @@ func _process(delta):
 		
 		#move on to next dialogue when player presses space
 		if(Input.is_action_just_pressed("jump")):
-			set_dialogue_index(dialogue_index + 1)
+			playing_dialogue = false
+			visible = false
+			Global.dialogue_playing = false

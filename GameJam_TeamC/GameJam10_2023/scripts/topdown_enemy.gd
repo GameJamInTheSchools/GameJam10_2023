@@ -2,17 +2,18 @@ extends CharacterBody2D
 
 var SPEED = 25.0
 
-var health = 5 if name != "Final Boss" else 15
+var health = 5
 
 var detectedPlayer:Node2D = null
 var _timer = null
 
 func _on_timer_timeout():
-	if detectedPlayer != null:
+	if detectedPlayer != null and !Global.dialogue_playing:
 		$fireball_shooter.shoot(global_position.direction_to(detectedPlayer.position))
 
 func _ready():
-	Global.player = self
+	if(name == "Final Boss"):
+		health = 50
 	_timer = Timer.new()
 	add_child(_timer)
 	
@@ -23,6 +24,9 @@ func _ready():
 
 func _physics_process(delta):
 	
+	if(Global.dialogue_playing):
+		return
+
 	var direction = Vector2.ZERO
 	if detectedPlayer != null:
 		direction = global_position.direction_to(detectedPlayer.position)

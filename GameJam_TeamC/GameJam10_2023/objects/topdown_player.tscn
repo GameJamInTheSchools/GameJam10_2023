@@ -23,6 +23,8 @@ shape = SubResource("RectangleShape2D_mgbgw")
 [node name="pea_shooter" parent="." instance=ExtResource("3_ekh4r")]
 
 [node name="dialogue" parent="." instance=ExtResource("4_h6h8a")]
-dialogue = Array[String](["Hello! I wonder what adventures I will get up to today?", "Maybe I will go defeat the villan and save the princess!"])
+unique_name_in_owner = true
+dialogue = Array[String](["Hero: That DEMON.. he may  have beaten me last time but this time it will be different,,, I PROMISE!!", "test", "Demon: ....... Welcome!! ...... I have been expecting you ...... If you want to fight me, you'll need to fight my henchmen first ....", "Hero: I am now worthy of taking you down!
+Demon: You can try, yet you will fail."])
 
 [node name="fireball_shooter" parent="." instance=ExtResource("5_6rp3o")]

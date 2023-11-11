@@ -18,5 +18,7 @@ offset_left = 5.0
 offset_right = 1130.0
 offset_bottom = 131.0
 theme_override_font_sizes/normal_font_size = 32
-text = "This is an example of loooooooooong text so I can test how this text box looks!"
+text = "Dialog 1
+Dialog 2
+Dialog 3"
 scroll_active = false
