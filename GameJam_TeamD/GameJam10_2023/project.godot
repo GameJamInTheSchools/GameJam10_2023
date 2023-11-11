@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CITSTemplate"
-run/main_scene="res://Scene 1 MS .tscn"
+run/main_scene="res://objects/screens/title_screen.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -21,8 +21,6 @@ Global="*res://scripts/global.gd"
 
 [display]
 
-window/size/viewport_width=1000
-window/size/viewport_height=350
 window/stretch/mode="viewport"
 
 [dotnet]
