@@ -11,4 +11,3 @@ func _on_credits_button_pressed():
 
 func _on_howtoplay_button_pressed():
 	get_tree().change_scene_to_file("res://objects/Screens/howtoplay_screen.tscn")
-

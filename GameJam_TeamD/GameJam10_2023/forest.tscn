@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://8gwljhvv3u41"]
+[gd_scene load_steps=6 format=3 uid="uid://8gwljhvv3u41"]
 
 [ext_resource type="Texture2D" uid="uid://cfdxxgp7ndi" path="res://fonts/57440a6b6c1f65eeac053ea7ee7c5469-1400x903.png" id="1_ywl2s"]
 [ext_resource type="PackedScene" uid="uid://4yaokftu64th" path="res://objects/wall.tscn" id="2_fbyuw"]
 [ext_resource type="PackedScene" uid="uid://bbmc70n366wep" path="res://objects/platformer_player.tscn" id="3_wfd7x"]
-[ext_resource type="PackedScene" path="res://objects/enemy.tscn" id="4_3kyfp"]
+[ext_resource type="PackedScene" uid="uid://cm60wbxx1t2iw" path="res://objects/enemy.tscn" id="4_3kyfp"]
+[ext_resource type="PackedScene" uid="uid://cu8bhui4dvtkv" path="res://objects/EnemyTracker.tscn" id="4_wbua8"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -38,6 +39,12 @@ scale = Vector2(4.85439, 5.73457)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="enemy" parent="." instance=ExtResource("4_3kyfp")]
-position = Vector2(1172, 163)
+[node name="EnemyTracker" parent="." instance=ExtResource("4_wbua8")]
+offset_left = 658.0
+offset_top = 204.0
+offset_right = 954.0
+offset_bottom = 344.0
+
+[node name="enemy" parent="EnemyTracker" instance=ExtResource("4_3kyfp")]
+position = Vector2(514, -41)
 scale = Vector2(5, 5)
