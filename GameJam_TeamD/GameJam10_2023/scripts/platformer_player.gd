@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var SPEED = 150.0
 var JUMP_SPEED = -400.0
-var GRAVITY = 980
+var GRAVITY = 500.0
 var animation_direction = Vector2.RIGHT
 
 var health = 50

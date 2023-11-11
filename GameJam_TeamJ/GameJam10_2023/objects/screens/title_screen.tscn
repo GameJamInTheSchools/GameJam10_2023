@@ -8,6 +8,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -77.0
+offset_top = -17.0
+offset_right = -77.0
+offset_bottom = -17.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ng0qv")
@@ -21,11 +25,12 @@ offset_left = -355.5
 offset_right = 355.5
 offset_bottom = 175.0
 grow_horizontal = 2
+rotation = -0.00390237
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("1_av17y")
 theme_override_font_sizes/font_size = 100
-text = "GAME TITLE"
+text = "The Legend's"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -43,7 +48,7 @@ offset_bottom = 51.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 50
-text = "PLAY"
+text = "Start "
 
 [node name="CreditsButton" type="Button" parent="."]
 layout_mode = 1
