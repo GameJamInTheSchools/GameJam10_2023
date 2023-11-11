@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cyfb7ljqwy7ir"]
 
 [ext_resource type="PackedScene" uid="uid://4yaokftu64th" path="res://objects/wall.tscn" id="1_bb2p4"]
-[ext_resource type="Texture2D" uid="uid://cfdxxgp7ndi" path="res://Art/57440a6b6c1f65eeac053ea7ee7c5469-1400x903.png" id="2_ixfa6"]
+[ext_resource type="Texture2D" uid="uid://cfdxxgp7ndi" path="res://fonts/57440a6b6c1f65eeac053ea7ee7c5469-1400x903.png" id="2_ixfa6"]
 
 [node name="Forest ek" type="Node2D"]
 position = Vector2(-57, -155)

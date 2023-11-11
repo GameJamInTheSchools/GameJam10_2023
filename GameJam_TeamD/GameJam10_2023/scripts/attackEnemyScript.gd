@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var health = 5
+@export var health = 15
 
 var time = 0
 
