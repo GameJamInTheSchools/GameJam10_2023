@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var SPEED = 150.0
 
-var health = 3
+var health = 10
 
 func _ready():
 	Global.player = self
