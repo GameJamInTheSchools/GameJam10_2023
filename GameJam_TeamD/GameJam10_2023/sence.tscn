@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bivtm3du180x6" path="res://sprites/32x32 topdown tileset Spreadsheet V1-1.png" id="1_h3834"]
 [ext_resource type="Texture2D" uid="uid://dmtf5afts6ia5" path="res://sprites/16x16 roguelike tileset Spreadsheet 1-5.png" id="2_mc8sb"]
 [ext_resource type="PackedScene" uid="uid://cm60wbxx1t2iw" path="res://objects/enemy.tscn" id="5_dolu6"]
-[ext_resource type="PackedScene" path="res://objects/EnemyTracker.tscn" id="5_m4mnt"]
+[ext_resource type="PackedScene" uid="uid://cu8bhui4dvtkv" path="res://objects/EnemyTracker.tscn" id="5_m4mnt"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="5_wrb4g"]
 [ext_resource type="PackedScene" uid="uid://chcylrt0adxst" path="res://objects/attack enemy.tscn" id="6_7di6q"]
 
@@ -3599,7 +3599,6 @@ scale = Vector2(0.4, 0.4)
 zoom = Vector2(4, 4)
 
 [node name="EnemyTracker" parent="." instance=ExtResource("5_m4mnt")]
-visible = true
 offset_left = 86.0
 offset_top = 168.0
 offset_right = 141.0
