@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyfb7ljqwy7ir"]
+
+[ext_resource type="PackedScene" uid="uid://4yaokftu64th" path="res://objects/wall.tscn" id="1_bb2p4"]
+[ext_resource type="Texture2D" uid="uid://cfdxxgp7ndi" path="res://fonts/57440a6b6c1f65eeac053ea7ee7c5469-1400x903.png" id="2_ixfa6"]
+
+[node name="Forest ek" type="Node2D"]
+position = Vector2(-57, -155)
+
+[node name="Wall2" parent="." instance=ExtResource("1_bb2p4")]
+
+[node name="Wall" parent="." instance=ExtResource("1_bb2p4")]
+position = Vector2(509, 599)
+scale = Vector2(4.25537, -1.72775)
+
+[node name="Wall3" parent="." instance=ExtResource("1_bb2p4")]
+position = Vector2(803, 441)
+scale = Vector2(2.85789, -1.30232)
+
+[node name="57440a6b6c1f65Eeac053Ea7Ee7c5469-1400x903" type="Sprite2D" parent="."]
+texture = ExtResource("2_ixfa6")
