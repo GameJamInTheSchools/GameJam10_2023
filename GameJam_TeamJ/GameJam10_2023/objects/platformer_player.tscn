@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bbmc70n366wep"]
+[gd_scene load_steps=7 format=3 uid="uid://ckoxfd58ulmoc"]
 
 [ext_resource type="SpriteFrames" uid="uid://d1kujscol0r1f" path="res://sprites/cowgirl.tres" id="1_h2rap"]
 [ext_resource type="Script" path="res://scripts/platformer_player.gd" id="1_ndjl7"]
@@ -14,8 +14,7 @@ script = ExtResource("1_ndjl7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_h2rap")
-animation = &"run_up"
-frame_progress = 0.685396
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -0.5)
