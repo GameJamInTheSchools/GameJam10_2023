@@ -16,4 +16,10 @@ func take_damage(damage_amount):
 	if(health <= 0):
 		queue_free()
 		
+
+func shoot(direction : Vector2):
+	var bullet = load("res://objects/bullet.tscn").instantiate()
+	bullet.shooter = get_parent()
+	get_tree().root.add_child(bullet)
+	$AudioStreamPlayer2D.play()
 	
