@@ -9,7 +9,7 @@ func _ready():
 
 func _physics_process(delta):
 	
-	# Move in 4 directions
+	# Move in 4 directionsawd
 	var direction = Vector2.ZERO
 	if Input.is_action_pressed("left"):
 		direction += Vector2.LEFT
