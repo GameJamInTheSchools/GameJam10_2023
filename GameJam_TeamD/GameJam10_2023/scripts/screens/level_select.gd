@@ -15,12 +15,11 @@ func _on_scene_3_pressed():
 
 
 func _on_scene_4_pressed():
-	get_tree().change_scene_to_file("res://level.tscn")
+	get_tree().change_scene_to_file("res://node_2djf.tscn")
 
 
 func _on_scene_5_pressed():
-	pass
-	#get_tree().change_scene_to_file("")
+	get_tree().change_scene_to_file("res://boss_battle.tscn")
 
 
 func _on_testing_pressed():

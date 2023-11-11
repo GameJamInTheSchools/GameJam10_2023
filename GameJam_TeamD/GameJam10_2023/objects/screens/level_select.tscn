@@ -40,17 +40,17 @@ text = "Level 3"
 [node name="Scene 4" type="Button" parent="."]
 layout_mode = 0
 offset_left = 465.0
-offset_top = 294.0
+offset_top = 297.0
 offset_right = 637.0
-offset_bottom = 361.0
+offset_bottom = 364.0
 text = "Level 4"
 
 [node name="Scene 5" type="Button" parent="."]
 layout_mode = 0
 offset_left = 465.0
-offset_top = 372.0
+offset_top = 373.0
 offset_right = 637.0
-offset_bottom = 439.0
+offset_bottom = 440.0
 text = "Level 5"
 
 [node name="Testing" type="Button" parent="."]
