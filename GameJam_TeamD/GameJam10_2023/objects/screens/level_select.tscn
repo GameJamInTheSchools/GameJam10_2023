@@ -54,7 +54,6 @@ offset_bottom = 413.0
 text = "Level 4"
 
 [node name="Scene 5" type="Button" parent="."]
-layout_mode = 0
 offset_left = 465.0
 offset_top = 422.0
 offset_right = 637.0
