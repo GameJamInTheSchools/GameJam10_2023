@@ -1,13 +1,25 @@
 extends CharacterBody2D
 
-var SPEED = 15.0
+var SPEED = 25.0
 
-var health = 3
+var health = 5
 
 var detectedPlayer:Node2D = null
+var _timer = null
+
+func _on_timer_timeout():
+	if detectedPlayer != null:
+		$pea_shooter.shoot(global_position.direction_to(detectedPlayer.position))
 
 func _ready():
 	Global.player = self
+	_timer = Timer.new()
+	add_child(_timer)
+	
+	_timer.connect("timeout", _on_timer_timeout)
+	_timer.set_wait_time(1.0)
+	_timer.set_one_shot(false) # Make sure it loops
+	_timer.start()
 
 func _physics_process(delta):
 	
@@ -52,10 +64,6 @@ func take_damage(damage_amount):
 
 
 func _on_area_2d_body_entered(body):
-	detectedPlayer = body
-
-
-
-func _on_area_2d_body_exited(body):
-	detectedPlayer = null
+	if body.name == "Player":
+		detectedPlayer = body
 
