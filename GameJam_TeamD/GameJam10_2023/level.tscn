@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dieyq3xvk2iud"]
+[gd_scene load_steps=5 format=3 uid="uid://dieyq3xvk2iud"]
 
 [ext_resource type="TileSet" uid="uid://c4db1cowig3oi" path="res://sprites/default_tileset.tres" id="1_0veil"]
 [ext_resource type="PackedScene" uid="uid://4yaokftu64th" path="res://objects/wall.tscn" id="1_we4uo"]
 [ext_resource type="PackedScene" uid="uid://bbmc70n366wep" path="res://objects/platformer_player.tscn" id="2_0qvhq"]
+[ext_resource type="PackedScene" uid="uid://buqcuw7bllggb" path="res://objects/enemy.tscn" id="4_yk54g"]
 
 [node name="Level" type="Node2D"]
 
@@ -37,3 +38,6 @@ zoom = Vector2(2, 2)
 
 [node name="Player" parent="." instance=ExtResource("2_0qvhq")]
 position = Vector2(580, 326)
+
+[node name="Enemy" parent="." instance=ExtResource("4_yk54g")]
+position = Vector2(721, 305)
