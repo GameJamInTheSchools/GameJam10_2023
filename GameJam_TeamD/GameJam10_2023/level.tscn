@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://c4db1cowig3oi" path="res://sprites/default_tileset.tres" id="1_0veil"]
 [ext_resource type="PackedScene" uid="uid://4yaokftu64th" path="res://objects/wall.tscn" id="1_we4uo"]
 [ext_resource type="PackedScene" uid="uid://bbmc70n366wep" path="res://objects/platformer_player.tscn" id="2_0qvhq"]
-[ext_resource type="PackedScene" uid="uid://buqcuw7bllggb" path="res://objects/enemy.tscn" id="4_yk54g"]
+[ext_resource type="PackedScene" uid="uid://cm60wbxx1t2iw" path="res://objects/enemy.tscn" id="4_yk54g"]
 
 [node name="Level" type="Node2D"]
 
