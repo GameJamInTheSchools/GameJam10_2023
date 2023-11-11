@@ -22,6 +22,7 @@ offset_bottom = 124.0
 text = "Level 1"
 
 [node name="Scene 2" type="Button" parent="."]
+layout_mode = 0
 offset_left = 465.0
 offset_top = 138.0
 offset_right = 637.0
@@ -29,6 +30,7 @@ offset_bottom = 205.0
 text = "Level 2"
 
 [node name="Scene 3" type="Button" parent="."]
+layout_mode = 0
 offset_left = 465.0
 offset_top = 217.0
 offset_right = 637.0
@@ -36,6 +38,7 @@ offset_bottom = 284.0
 text = "Level 3"
 
 [node name="Scene 4" type="Button" parent="."]
+layout_mode = 0
 offset_left = 465.0
 offset_top = 297.0
 offset_right = 637.0
@@ -43,6 +46,7 @@ offset_bottom = 364.0
 text = "Level 4"
 
 [node name="Testing" type="Button" parent="."]
+layout_mode = 0
 offset_left = 465.0
 offset_top = 533.0
 offset_right = 637.0
