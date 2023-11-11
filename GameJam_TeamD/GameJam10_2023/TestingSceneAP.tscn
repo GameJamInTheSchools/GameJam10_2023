@@ -16,7 +16,6 @@ position = Vector2(443, 259)
 scale = Vector2(-3.53059, 6.90386)
 
 [node name="EnemyTracker" parent="." instance=ExtResource("3_puf5s")]
-visible = true
 offset_left = 401.0
 offset_top = 256.0
 offset_right = 697.0

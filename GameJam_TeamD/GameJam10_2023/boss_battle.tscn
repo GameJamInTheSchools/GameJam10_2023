@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://cwobsampi8jpj"]
+[gd_scene load_steps=10 format=3 uid="uid://cwobsampi8jpj"]
 
 [ext_resource type="Texture2D" uid="uid://dmtf5afts6ia5" path="res://sprites/16x16 roguelike tileset Spreadsheet 1-5.png" id="2_p0lrm"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="3_1bifr"]
+[ext_resource type="PackedScene" path="res://objects/EnemyTracker.tscn" id="3_b8en8"]
 [ext_resource type="PackedScene" uid="uid://chcylrt0adxst" path="res://objects/attack enemy.tscn" id="4_444hd"]
 [ext_resource type="PackedScene" uid="uid://bihe0i1jwl1oo" path="res://objects/Boss Enemy.tscn" id="5_kksym"]
+[ext_resource type="PackedScene" uid="uid://dtghaqguulcmx" path="res://objects/fastenemy.tscn" id="6_25ryl"]
 
 [sub_resource type="TileSet" id="TileSet_uwg7w"]
 
@@ -1551,30 +1553,42 @@ position = Vector2(515, 209)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="attack enemy" parent="." instance=ExtResource("4_444hd")]
-position = Vector2(829, 293)
+[node name="EnemyTracker" parent="." instance=ExtResource("3_b8en8")]
+offset_left = -170.0
+offset_top = 31.0
+offset_right = 126.0
+offset_bottom = 171.0
 
-[node name="attack enemy2" parent="." instance=ExtResource("4_444hd")]
-position = Vector2(832, 145)
+[node name="attack enemy" parent="EnemyTracker" instance=ExtResource("4_444hd")]
+position = Vector2(999, 262)
 
-[node name="attack enemy3" parent="." instance=ExtResource("4_444hd")]
-position = Vector2(736, 89)
+[node name="attack enemy2" parent="EnemyTracker" instance=ExtResource("4_444hd")]
+position = Vector2(1002, 114)
 
-[node name="attack enemy4" parent="." instance=ExtResource("4_444hd")]
-position = Vector2(862, 187)
+[node name="attack enemy3" parent="EnemyTracker" instance=ExtResource("4_444hd")]
+position = Vector2(906, 58)
 
-[node name="attack enemy5" parent="." instance=ExtResource("4_444hd")]
-position = Vector2(914, 184)
+[node name="attack enemy4" parent="EnemyTracker" instance=ExtResource("4_444hd")]
+position = Vector2(1032, 156)
 
-[node name="attack enemy6" parent="." instance=ExtResource("5_kksym")]
-position = Vector2(14, 92)
+[node name="attack enemy5" parent="EnemyTracker" instance=ExtResource("4_444hd")]
+position = Vector2(1084, 153)
+
+[node name="attack enemy6" parent="EnemyTracker" instance=ExtResource("5_kksym")]
+position = Vector2(184, 61)
 scale = Vector2(5, 5)
 
-[node name="attack enemy7" parent="." instance=ExtResource("4_444hd")]
-position = Vector2(-74, -30)
+[node name="attack enemy7" parent="EnemyTracker" instance=ExtResource("4_444hd")]
+position = Vector2(96, -61)
 
-[node name="attack enemy8" parent="." instance=ExtResource("4_444hd")]
-position = Vector2(-27, 234)
+[node name="attack enemy8" parent="EnemyTracker" instance=ExtResource("4_444hd")]
+position = Vector2(143, 203)
 
-[node name="attack enemy9" parent="." instance=ExtResource("4_444hd")]
-position = Vector2(-155, 115)
+[node name="attack enemy9" parent="EnemyTracker" instance=ExtResource("4_444hd")]
+position = Vector2(15, 84)
+
+[node name="attack enemy" parent="." instance=ExtResource("6_25ryl")]
+position = Vector2(37, -54)
+
+[node name="attack enemy2" parent="." instance=ExtResource("6_25ryl")]
+position = Vector2(211, 31)

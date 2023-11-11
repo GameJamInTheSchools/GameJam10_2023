@@ -25,7 +25,7 @@ func wait(delta):
 	time = time + delta
 	#print(time)
 	
-	if(time > 0.5):
+	if(time > 0.2):
 		shoot((Vector2(randf_range(50, -50),randf_range(50, -50))).normalized())
 		time = 0
 
