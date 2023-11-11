@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ugcqvi6grgg1" path="res://objects/DeathZone.tscn" id="4_c2dhi"]
 [ext_resource type="PackedScene" uid="uid://cm60wbxx1t2iw" path="res://objects/enemy.tscn" id="5_dolu6"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="5_wrb4g"]
-[ext_resource type="PackedScene" uid="uid://275csja2o5si" path="res://objects/attack enemy.tscn" id="6_7di6q"]
+[ext_resource type="PackedScene" uid="uid://chcylrt0adxst" path="res://objects/attack enemy.tscn" id="6_7di6q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d070f"]
 texture = ExtResource("1_h3834")
@@ -3606,4 +3606,31 @@ zoom = Vector2(4, 4)
 position = Vector2(84, 220)
 
 [node name="attack enemy" parent="." instance=ExtResource("6_7di6q")]
-position = Vector2(283, 224)
+position = Vector2(172, 311)
+
+[node name="attack enemy2" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(121, 317)
+
+[node name="attack enemy3" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(83, 324)
+
+[node name="attack enemy4" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(116, 273)
+
+[node name="attack enemy5" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(32, 264)
+
+[node name="attack enemy6" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(33, 312)
+
+[node name="attack enemy7" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(167, 267)
+
+[node name="attack enemy8" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(73, 280)
+
+[node name="attack enemy9" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(212, 272)
+
+[node name="attack enemy10" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(227, 317)

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b0pwk41gs2yr7"]
+[gd_scene load_steps=6 format=3 uid="uid://b0pwk41gs2yr7"]
 
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="1_otcga"]
 [ext_resource type="PackedScene" uid="uid://ugcqvi6grgg1" path="res://objects/DeathZone.tscn" id="2_qci76"]
 [ext_resource type="PackedScene" uid="uid://cm60wbxx1t2iw" path="res://objects/enemy.tscn" id="3_18ocr"]
+[ext_resource type="PackedScene" uid="uid://cu8bhui4dvtkv" path="res://objects/EnemyTracker.tscn" id="3_puf5s"]
 [ext_resource type="PackedScene" uid="uid://chcylrt0adxst" path="res://objects/attack enemy.tscn" id="4_3cy5b"]
 
 [node name="TestingSceneAP" type="Node2D"]
@@ -14,8 +15,15 @@ position = Vector2(371, 263)
 position = Vector2(443, 259)
 scale = Vector2(-3.53059, 6.90386)
 
-[node name="enemy" parent="." instance=ExtResource("3_18ocr")]
-position = Vector2(307, 265)
+[node name="EnemyTracker" parent="." instance=ExtResource("3_puf5s")]
+visible = true
+offset_left = 401.0
+offset_top = 256.0
+offset_right = 697.0
+offset_bottom = 396.0
 
-[node name="attack enemy" parent="." instance=ExtResource("4_3cy5b")]
-position = Vector2(305, 212)
+[node name="enemy" parent="EnemyTracker" instance=ExtResource("3_18ocr")]
+position = Vector2(-94, 9)
+
+[node name="attack enemy" parent="EnemyTracker" instance=ExtResource("4_3cy5b")]
+position = Vector2(-96, -44)

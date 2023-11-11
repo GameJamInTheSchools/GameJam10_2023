@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://by7db3dsmo5gx"]
+[gd_scene load_steps=2 format=3 uid="uid://ccbe07sqp85w5"]
 
 [ext_resource type="Script" path="res://scripts/screens/level_select.gd" id="1_txy0a"]
 
@@ -40,18 +40,10 @@ text = "Level 3"
 [node name="Scene 4" type="Button" parent="."]
 layout_mode = 0
 offset_left = 465.0
-offset_top = 294.0
+offset_top = 297.0
 offset_right = 637.0
-offset_bottom = 361.0
+offset_bottom = 364.0
 text = "Level 4"
-
-[node name="Scene 5" type="Button" parent="."]
-layout_mode = 0
-offset_left = 465.0
-offset_top = 372.0
-offset_right = 637.0
-offset_bottom = 439.0
-text = "Level 5"
 
 [node name="Testing" type="Button" parent="."]
 layout_mode = 0
@@ -65,5 +57,4 @@ text = "Testing"
 [connection signal="pressed" from="Scene 2" to="." method="_on_scene_2_pressed"]
 [connection signal="pressed" from="Scene 3" to="." method="_on_scene_3_pressed"]
 [connection signal="pressed" from="Scene 4" to="." method="_on_scene_4_pressed"]
-[connection signal="pressed" from="Scene 5" to="." method="_on_scene_5_pressed"]
 [connection signal="pressed" from="Testing" to="." method="_on_testing_pressed"]
