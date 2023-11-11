@@ -7,6 +7,9 @@ var animation_direction = Vector2.RIGHT
 
 var health = 3
 
+func _ready():
+	Global.player = self
+
 func _physics_process(delta):
 	# gravity
 	if not is_on_floor():

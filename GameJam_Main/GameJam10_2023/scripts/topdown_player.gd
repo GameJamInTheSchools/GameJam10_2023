@@ -4,8 +4,11 @@ var SPEED = 150.0
 
 var health = 3
 
-func _physics_process(delta):
+func _ready():
+	Global.player = self
 
+func _physics_process(delta):
+	
 	# Move in 4 directions
 	var direction = Vector2.ZERO
 	if Input.is_action_pressed("left"):
