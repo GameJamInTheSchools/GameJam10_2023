@@ -12,4 +12,4 @@ func _process(delta):
 		self.self_modulate.a = 225
 
 func _on_scene_4_pressed():
-	get_tree().change_scene_to_file("uid://by7db3dsmo5gx")
+	get_tree().change_scene_to_file("res://objects/screens/title_screen.tscn")
