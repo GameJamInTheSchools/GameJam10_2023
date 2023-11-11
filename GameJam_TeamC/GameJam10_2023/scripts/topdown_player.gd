@@ -25,9 +25,9 @@ func _physics_process(delta):
 	
 	#play animations
 	if velocity.x != 0:
-		var walking_left = false
+		var walking_left = true
 		if velocity.x < 0:
-			walking_left = true
+			walking_left = false
 		$AnimatedSprite2D.flip_h = walking_left
 		$AnimatedSprite2D.play("run_side")
 	elif velocity.y > 0:
