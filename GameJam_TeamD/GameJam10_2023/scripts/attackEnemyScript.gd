@@ -37,6 +37,5 @@ func shoot(direction : Vector2):
 	get_tree().root.add_child(bullet)
 	#$dwdAudioStreamPlayer2D.play()
 	
-	print(bullet)
 
 	
