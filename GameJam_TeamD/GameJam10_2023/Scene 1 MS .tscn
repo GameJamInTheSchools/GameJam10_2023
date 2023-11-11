@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dhy84ymv52c5q"]
+[gd_scene load_steps=10 format=3 uid="uid://dhy84ymv52c5q"]
 
 [ext_resource type="TileSet" uid="uid://c4db1cowig3oi" path="res://sprites/default_tileset.tres" id="1_nmbpf"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="2_7h2nu"]
@@ -7,6 +7,8 @@
 [ext_resource type="Script" path="res://scripts/DialogueScript.gd" id="5_70sij"]
 [ext_resource type="PackedScene" path="res://objects/attack enemy.tscn" id="6_fwnwg"]
 [ext_resource type="PackedScene" uid="uid://bbmc70n366wep" path="res://objects/platformer_player.tscn" id="7_t66kc"]
+[ext_resource type="AudioStream" uid="uid://3npy5tmpw2co" path="res://audio/creepy_old_Nov_11_2023_317_PM.mp3" id="8_5ndfl"]
+[ext_resource type="AudioStream" uid="uid://c4l7qow8niogq" path="res://audio/concrete-footsteps-6752.mp3" id="9_cyc6g"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -122,3 +124,31 @@ position = Vector2(-110, 10)
 
 [node name="attack enemy4" parent="." instance=ExtResource("6_fwnwg")]
 position = Vector2(8, 419)
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="AudioListener2D"]
+position = Vector2(-2, 0)
+stream = ExtResource("8_5ndfl")
+volume_db = 7.462
+autoplay = true
+
+[node name="AudioListener2D" type="AudioListener2D" parent="AudioListener2D/AudioStreamPlayer2D"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="AudioListener2D/AudioStreamPlayer2D/AudioListener2D"]
+position = Vector2(3, 0)
+stream = ExtResource("9_cyc6g")
+volume_db = 24.0
+autoplay = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="AudioListener2D/AudioStreamPlayer2D/AudioListener2D"]
+offset_left = 349.0
+offset_top = 289.0
+offset_right = 629.0
+offset_bottom = 339.0
+text = "Its so dark...Better be careful...."
+
+[node name="TextEdit" type="TextEdit" parent="AudioListener2D/AudioStreamPlayer2D"]
+offset_right = 8.0
+offset_bottom = 8.0
+editable = false
