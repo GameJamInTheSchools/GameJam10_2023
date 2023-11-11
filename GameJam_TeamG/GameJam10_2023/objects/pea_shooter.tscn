@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdwgt8xju2tc2"]
+
+[ext_resource type="Script" path="res://scripts/pea_shooter.gd" id="1_hacqn"]
+[ext_resource type="AudioStream" uid="uid://ca6cghp77npmo" path="res://audio/shoot.wav" id="2_n4hg1"]
+
+[node name="pea_shooter" type="Node2D"]
+script = ExtResource("1_hacqn")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_n4hg1")
