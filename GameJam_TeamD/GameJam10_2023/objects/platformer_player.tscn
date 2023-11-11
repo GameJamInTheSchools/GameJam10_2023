@@ -1,15 +1,16 @@
 [gd_scene load_steps=7 format=3 uid="uid://bbmc70n366wep"]
 
-[ext_resource type="SpriteFrames" uid="uid://d1kujscol0r1f" path="res://sprites/cowgirl.tres" id="1_h2rap"]
+[ext_resource type="SpriteFrames" path="res://scripts/sprites/cowgirl.tres" id="1_h2rap"]
 [ext_resource type="Script" path="res://scripts/platformer_player.gd" id="1_ndjl7"]
 [ext_resource type="PackedScene" uid="uid://hb2l04r6y7hv" path="res://objects/dialogue.tscn" id="2_4y8pl"]
-[ext_resource type="AudioStream" uid="uid://dnc6as2w5nh5d" path="res://audio/jump.wav" id="3_dsr3k"]
+[ext_resource type="AudioStream" path="res://jump.wav" id="3_dsr3k"]
 [ext_resource type="PackedScene" uid="uid://bdwgt8xju2tc2" path="res://objects/pea_shooter.tscn" id="4_ingdo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_goaht"]
 size = Vector2(20, 31)
 
 [node name="Player" type="CharacterBody2D"]
+scale = Vector2(0.4, 0.4)
 script = ExtResource("1_ndjl7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
