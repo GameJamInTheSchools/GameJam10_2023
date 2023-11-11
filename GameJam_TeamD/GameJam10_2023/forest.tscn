@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://8gwljhvv3u41"]
 
-[ext_resource type="Texture2D" uid="uid://cfdxxgp7ndi" path="res://Art/57440a6b6c1f65eeac053ea7ee7c5469-1400x903.png" id="1_ywl2s"]
+[ext_resource type="Texture2D" uid="uid://cfdxxgp7ndi" path="res://fonts/57440a6b6c1f65eeac053ea7ee7c5469-1400x903.png" id="1_ywl2s"]
 [ext_resource type="PackedScene" uid="uid://4yaokftu64th" path="res://objects/wall.tscn" id="2_fbyuw"]
 [ext_resource type="PackedScene" uid="uid://bbmc70n366wep" path="res://objects/platformer_player.tscn" id="3_wfd7x"]
 [ext_resource type="PackedScene" path="res://objects/enemy.tscn" id="4_3kyfp"]
