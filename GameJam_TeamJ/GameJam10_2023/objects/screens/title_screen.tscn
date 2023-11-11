@@ -48,7 +48,7 @@ offset_bottom = 51.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 50
-text = "Start "
+text = "Start"
 
 [node name="CreditsButton" type="Button" parent="."]
 layout_mode = 1
