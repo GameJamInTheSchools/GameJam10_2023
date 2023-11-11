@@ -13,44 +13,51 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_txy0a")
 
+[node name="Scene 0" type="Button" parent="."]
+offset_left = 465.0
+offset_top = 29.0
+offset_right = 637.0
+offset_bottom = 96.0
+text = "Level 0"
+
 [node name="Scene 1" type="Button" parent="."]
 layout_mode = 0
 offset_left = 465.0
-offset_top = 57.0
+offset_top = 106.0
 offset_right = 637.0
-offset_bottom = 124.0
+offset_bottom = 173.0
 text = "Level 1"
 
 [node name="Scene 2" type="Button" parent="."]
 layout_mode = 0
 offset_left = 465.0
-offset_top = 138.0
+offset_top = 187.0
 offset_right = 637.0
-offset_bottom = 205.0
+offset_bottom = 254.0
 text = "Level 2"
 
 [node name="Scene 3" type="Button" parent="."]
 layout_mode = 0
 offset_left = 465.0
-offset_top = 217.0
+offset_top = 266.0
 offset_right = 637.0
-offset_bottom = 284.0
+offset_bottom = 333.0
 text = "Level 3"
 
 [node name="Scene 4" type="Button" parent="."]
 layout_mode = 0
 offset_left = 465.0
-offset_top = 297.0
+offset_top = 346.0
 offset_right = 637.0
-offset_bottom = 364.0
+offset_bottom = 413.0
 text = "Level 4"
 
 [node name="Scene 5" type="Button" parent="."]
 layout_mode = 0
 offset_left = 465.0
-offset_top = 373.0
+offset_top = 422.0
 offset_right = 637.0
-offset_bottom = 440.0
+offset_bottom = 489.0
 text = "Level 5"
 
 [node name="Testing" type="Button" parent="."]
@@ -61,6 +68,7 @@ offset_right = 637.0
 offset_bottom = 600.0
 text = "Testing"
 
+[connection signal="pressed" from="Scene 0" to="." method="_on_scene_0_pressed"]
 [connection signal="pressed" from="Scene 1" to="." method="_on_scene_1_pressed"]
 [connection signal="pressed" from="Scene 2" to="." method="_on_scene_2_pressed"]
 [connection signal="pressed" from="Scene 3" to="." method="_on_scene_3_pressed"]

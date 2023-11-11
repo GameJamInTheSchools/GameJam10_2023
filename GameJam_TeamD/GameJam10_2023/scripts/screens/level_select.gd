@@ -1,6 +1,9 @@
 extends Node
 
 
+func _on_scene_0_pressed():
+	get_tree().change_scene_to_file("res://level.tscn")
+
 
 func _on_scene_1_pressed():
 	get_tree().change_scene_to_file("res://Scene 1 MS .tscn")
@@ -24,3 +27,4 @@ func _on_scene_5_pressed():
 
 func _on_testing_pressed():
 	get_tree().change_scene_to_file("res://TestingSceneAP.tscn")
+
