@@ -1,33 +1,28 @@
 extends CharacterBody2D
 
-var SPEED = 150.0
+var SPEED = 15.0
 
 var health = 3
+
+var detectedPlayer:Node2D = null
 
 func _ready():
 	Global.player = self
 
 func _physics_process(delta):
 	
-	# Move in 4 directionsawd
 	var direction = Vector2.ZERO
-	if Input.is_action_pressed("left"):
-		direction += Vector2.LEFT
-	if Input.is_action_pressed("right"):
-		direction += Vector2.RIGHT
-	if Input.is_action_pressed("up"):
-		direction += Vector2.UP
-	if Input.is_action_pressed("down"):
-		direction += Vector2.DOWN
+	if detectedPlayer != null:
+		direction = global_position.direction_to(detectedPlayer.position)
 	
 	velocity = direction * SPEED
 	move_and_slide()
 	
 	#play animations
 	if velocity.x != 0:
-		var walking_left = false
+		var walking_left = true
 		if velocity.x < 0:
-			walking_left = true
+			walking_left = false
 		$AnimatedSprite2D.flip_h = walking_left
 		$AnimatedSprite2D.play("run_side")
 	elif velocity.y > 0:
@@ -38,12 +33,12 @@ func _physics_process(delta):
 		$AnimatedSprite2D.play("idle")
 	
 	#shoot bullets in direction of mouse
-	if(Input.is_action_just_pressed("shoot")):
-		$pea_shooter.shoot(global_position.direction_to(get_global_mouse_position()))
+	#if(Input.is_action_just_pressed("shoot")):
+	#	$pea_shooter.shoot(global_position.direction_to(get_global_mouse_position()))
 	
 	#say dialogue when we press Q
-	if(Input.is_action_just_pressed("dialogue")):
-		$dialogue.play_dialogue()
+	#if(Input.is_action_just_pressed("dialogue")):
+	#	$dialogue.play_dialogue()
 
 func take_damage(damage_amount):
 	#reduce health
@@ -52,4 +47,15 @@ func take_damage(damage_amount):
 	#if we die, destroy the character, and go to the game over screen
 	if(health <= 0):
 		queue_free()
-		get_tree().change_scene_to_file("res://objects/Screens/gameover_screen.tscn")
+
+
+
+
+func _on_area_2d_body_entered(body):
+	detectedPlayer = body
+
+
+
+func _on_area_2d_body_exited(body):
+	detectedPlayer = null
+
