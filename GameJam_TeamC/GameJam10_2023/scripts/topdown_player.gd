@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var SPEED = 150.0
 
-var health = 3
+var health = 20
 
 func _ready():
 	Global.player = self
@@ -39,7 +39,7 @@ func _physics_process(delta):
 	
 	#shoot bullets in direction of mouse
 	if(Input.is_action_just_pressed("shoot")):
-		$pea_shooter.shoot(global_position.direction_to(get_global_mouse_position()))
+		$fireball_shooter.shoot(global_position.direction_to(get_global_mouse_position()))
 	
 	#say dialogue when we press Q
 	if(Input.is_action_just_pressed("dialogue")):

@@ -2,14 +2,14 @@ extends CharacterBody2D
 
 var SPEED = 25.0
 
-var health = 5
+var health = 5 if name != "Final Boss" else 15
 
 var detectedPlayer:Node2D = null
 var _timer = null
 
 func _on_timer_timeout():
 	if detectedPlayer != null:
-		$pea_shooter.shoot(global_position.direction_to(detectedPlayer.position))
+		$fireball_shooter.shoot(global_position.direction_to(detectedPlayer.position))
 
 func _ready():
 	Global.player = self
@@ -59,6 +59,8 @@ func take_damage(damage_amount):
 	#if we die, destroy the character, and go to the game over screen
 	if(health <= 0):
 		queue_free()
+		if(name == "Final Boss"):
+			get_tree().change_scene_to_file("res://objects/screens/credits_screen.tscn")
 
 
 

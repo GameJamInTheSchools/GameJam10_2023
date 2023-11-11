@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://cxc6dtuhl1mqm"]
+
+[ext_resource type="Texture2D" uid="uid://dqkbfhhjrjdb3" path="res://sprites/New Piskel (1).png" id="1_qa501"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2q1do"]
+atlas = ExtResource("1_qa501")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tis4v"]
+atlas = ExtResource("1_qa501")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rm62m"]
+atlas = ExtResource("1_qa501")
+region = Rect2(0, 64, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2q1do")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tis4v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rm62m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}]
