@@ -2,7 +2,7 @@ extends Area2D
 
 var direction = Vector2.ZERO
 var shooter = null
-var SPEED = 500
+var SPEED = 200
 
 func _process(delta):
 	#move the bullet
