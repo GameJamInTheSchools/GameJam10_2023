@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://b33yptpp0ogko"]
+
+[ext_resource type="Script" path="res://scripts/topdown_enemy.gd" id="1_v5upg"]
+[ext_resource type="SpriteFrames" uid="uid://mcjxoy4cwe4x" path="res://sprites/archer.tres" id="2_wri4d"]
+[ext_resource type="PackedScene" uid="uid://bdwgt8xju2tc2" path="res://objects/pea_shooter.tscn" id="3_7vga3"]
+[ext_resource type="PackedScene" uid="uid://hb2l04r6y7hv" path="res://objects/dialogue.tscn" id="4_mg88c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgbgw"]
+size = Vector2(29, 32)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pv4ub"]
+radius = 107.201
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_v5upg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.8125, 1.8125)
+sprite_frames = ExtResource("2_wri4d")
+animation = &"run_up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mgbgw")
+
+[node name="pea_shooter" parent="." instance=ExtResource("3_7vga3")]
+
+[node name="dialogue" parent="." instance=ExtResource("4_mg88c")]
+dialogue = Array[String](["Hello! I wonder what adventures I will get up to today?", "Maybe I will go defeat the villan and save the princess!"])
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_pv4ub")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

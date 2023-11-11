@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0pwk41gs2yr7"]
+
+[ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="1_otcga"]
+[ext_resource type="PackedScene" uid="uid://ugcqvi6grgg1" path="res://objects/DeathZone.tscn" id="2_qci76"]
+
+[node name="TestingSceneAP" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_otcga")]
+position = Vector2(371, 263)
+
+[node name="DeathZone" parent="." instance=ExtResource("2_qci76")]
+position = Vector2(443, 259)
+scale = Vector2(-3.53059, 6.90386)
+
+[connection signal="body_entered" from="DeathZone" to="DeathZone" method="_on_body_entered"]
