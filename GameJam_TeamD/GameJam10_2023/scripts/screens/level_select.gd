@@ -11,17 +11,8 @@ func _on_scene_2_pressed():
 
 
 func _on_scene_3_pressed():	
-	get_tree().change_scene_to_file("res://Forest ek.tscn")
+	get_tree().change_scene_to_file("res://Forest.tscn")
 
 
 func _on_scene_4_pressed():
 	get_tree().change_scene_to_file("res://level.tscn")
-
-
-func _on_scene_5_pressed():
-	get_tree().change_scene_to_file("res://node_2djf.tscn")
-
-
-func _on_testing_pressed():
-	get_tree().change_scene_to_file("res://TestingSceneAP.tscn")
-

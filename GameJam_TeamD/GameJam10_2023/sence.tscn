@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://c081ih5iflxbs"]
+[gd_scene load_steps=11 format=3 uid="uid://c081ih5iflxbs"]
 
 [ext_resource type="Texture2D" uid="uid://bivtm3du180x6" path="res://sprites/32x32 topdown tileset Spreadsheet V1-1.png" id="1_h3834"]
 [ext_resource type="Texture2D" uid="uid://dmtf5afts6ia5" path="res://sprites/16x16 roguelike tileset Spreadsheet 1-5.png" id="2_mc8sb"]
 [ext_resource type="PackedScene" uid="uid://ugcqvi6grgg1" path="res://objects/DeathZone.tscn" id="4_c2dhi"]
 [ext_resource type="PackedScene" uid="uid://cm60wbxx1t2iw" path="res://objects/enemy.tscn" id="5_dolu6"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="5_wrb4g"]
+[ext_resource type="PackedScene" uid="uid://275csja2o5si" path="res://objects/attack enemy.tscn" id="6_7di6q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d070f"]
 texture = ExtResource("1_h3834")
@@ -3602,4 +3603,7 @@ scale = Vector2(0.4, 0.4)
 zoom = Vector2(4, 4)
 
 [node name="enemy" parent="." instance=ExtResource("5_dolu6")]
-position = Vector2(82, 222)
+position = Vector2(84, 220)
+
+[node name="attack enemy" parent="." instance=ExtResource("6_7di6q")]
+position = Vector2(283, 224)
