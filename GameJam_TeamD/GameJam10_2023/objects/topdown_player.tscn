@@ -23,3 +23,6 @@ shape = SubResource("RectangleShape2D_mgbgw")
 
 [node name="dialogue" parent="." instance=ExtResource("4_h6h8a")]
 dialogue = Array[String](["Hello! I wonder what adventures I will get up to today?", "Maybe I will go defeat the villan and save the princess!"])
+
+[node name="pea_shooter2" parent="." instance=ExtResource("3_ekh4r")]
+position = Vector2(-163, 608)
