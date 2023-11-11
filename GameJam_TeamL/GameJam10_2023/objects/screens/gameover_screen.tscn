@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyk3lvejr6dfo"]
+
+[ext_resource type="Script" path="res://scripts/screens/basic_screen.gd" id="1_vkiyn"]
+[ext_resource type="FontFile" uid="uid://btwwbgeuvog5o" path="res://fonts/Retro Gaming.ttf" id="2_vclbi"]
+
+[node name="gameover_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vkiyn")
+
+[node name="Header" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -355.5
+offset_top = -87.5
+offset_right = 355.5
+offset_bottom = 87.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vclbi")
+theme_override_font_sizes/font_size = 100
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitlescreenButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -108.0
+offset_top = -185.0
+offset_right = 108.0
+offset_bottom = -107.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+text = "TITLE SCREEN"
+
+[connection signal="pressed" from="TitlescreenButton" to="." method="_on_back_button_pressed"]

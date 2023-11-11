@@ -1,0 +1,33 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://6vqm200hj63i"
+path="res://.godot/imported/Super Milk.ttf-3ae03647236f8220e43e1f975e9c3ce8.fontdata"
+
+[deps]
+
+source_file="res://fonts/Super Milk.ttf"
+dest_files=["res://.godot/imported/Super Milk.ttf-3ae03647236f8220e43e1f975e9c3ce8.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

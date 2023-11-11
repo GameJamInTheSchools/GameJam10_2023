@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://hb2l04r6y7hv"]
+
+[ext_resource type="Script" path="res://scripts/dialogue.gd" id="1_x7xas"]
+
+[node name="dialogue" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_x7xas")
+
+[node name="Textbox" type="Panel" parent="."]
+offset_left = 10.0
+offset_top = 497.0
+offset_right = 1140.0
+offset_bottom = 633.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Textbox"]
+layout_mode = 0
+offset_left = 5.0
+offset_right = 1130.0
+offset_bottom = 131.0
+theme_override_font_sizes/normal_font_size = 32
+text = "This is an example of loooooooooong text so I can test how this text box looks!"
+scroll_active = false
