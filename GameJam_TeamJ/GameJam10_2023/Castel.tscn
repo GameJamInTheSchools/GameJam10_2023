@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bivtm3du180x6" path="res://sprites/32x32 topdown tileset Spreadsheet V1-1.png" id="1_an4bp"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="2_dks5b"]
-[ext_resource type="PackedScene" uid="uid://dk87sol4f2rxv" path="res://objects/skeleton.tscn" id="3_nbgw2"]
+[ext_resource type="PackedScene" path="res://objects/skeleton.tscn" id="3_nbgw2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vjcrf"]
 texture = ExtResource("1_an4bp")
@@ -737,6 +737,7 @@ texture = ExtResource("1_an4bp")
 74:2/0 = 0
 74:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 74:2/0/physics_layer_0/angular_velocity = 0.0
+74:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
 75:2/0 = 0
 75:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 75:2/0/physics_layer_0/angular_velocity = 0.0
@@ -6073,13 +6074,13 @@ layer_0/tile_data = PackedInt32Array(-11, 3211264, 1, -10, 3211264, 1, 196594, 3
 [node name="Sprite2D" type="Sprite2D" parent="TileMap"]
 
 [node name="Player" parent="." instance=ExtResource("2_dks5b")]
-position = Vector2(-104, -184)
+position = Vector2(-275, -48)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(2, 2)
 
 [node name="skeleton" parent="." instance=ExtResource("3_nbgw2")]
-position = Vector2(-80, -280)
+position = Vector2(77, 147)
 
 [node name="skeleton2" parent="." instance=ExtResource("3_nbgw2")]
-position = Vector2(-176, -240)
+position = Vector2(83, 255)
