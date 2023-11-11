@@ -3599,7 +3599,6 @@ scale = Vector2(0.4, 0.4)
 zoom = Vector2(4, 4)
 
 [node name="EnemyTracker" parent="." instance=ExtResource("5_m4mnt")]
-visible = true
 offset_left = 86.0
 offset_top = 168.0
 offset_right = 141.0
