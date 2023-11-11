@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://cwobsampi8jpj"]
+[gd_scene load_steps=10 format=3 uid="uid://cwobsampi8jpj"]
 
 [ext_resource type="Texture2D" uid="uid://dmtf5afts6ia5" path="res://sprites/16x16 roguelike tileset Spreadsheet 1-5.png" id="2_p0lrm"]
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="3_1bifr"]
-[ext_resource type="PackedScene" uid="uid://cu8bhui4dvtkv" path="res://objects/EnemyTracker.tscn" id="3_b8en8"]
+[ext_resource type="PackedScene" path="res://objects/EnemyTracker.tscn" id="3_b8en8"]
 [ext_resource type="PackedScene" uid="uid://chcylrt0adxst" path="res://objects/attack enemy.tscn" id="4_444hd"]
 [ext_resource type="PackedScene" uid="uid://bihe0i1jwl1oo" path="res://objects/Boss Enemy.tscn" id="5_kksym"]
+[ext_resource type="PackedScene" uid="uid://dtghaqguulcmx" path="res://objects/fastenemy.tscn" id="6_25ryl"]
 
 [sub_resource type="TileSet" id="TileSet_uwg7w"]
 
@@ -1585,3 +1586,9 @@ position = Vector2(143, 203)
 
 [node name="attack enemy9" parent="EnemyTracker" instance=ExtResource("4_444hd")]
 position = Vector2(15, 84)
+
+[node name="attack enemy" parent="." instance=ExtResource("6_25ryl")]
+position = Vector2(37, -54)
+
+[node name="attack enemy2" parent="." instance=ExtResource("6_25ryl")]
+position = Vector2(211, 31)
