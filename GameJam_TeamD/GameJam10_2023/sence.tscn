@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://c081ih5iflxbs"]
 
 [ext_resource type="Texture2D" uid="uid://bivtm3du180x6" path="res://sprites/32x32 topdown tileset Spreadsheet V1-1.png" id="1_h3834"]
-[ext_resource type="Texture2D" path="res://tiles/16x16 roguelike tileset Spreadsheet 1-5.png" id="2_mc8sb"]
+[ext_resource type="Texture2D" uid="uid://dmtf5afts6ia5" path="res://sprites/16x16 roguelike tileset Spreadsheet 1-5.png" id="2_mc8sb"]
 [ext_resource type="PackedScene" uid="uid://bbmc70n366wep" path="res://objects/platformer_player.tscn" id="3_bag0h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_il6mf"]
