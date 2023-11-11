@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var health = 500
+@export var health = 7
 
 var time = 0
 
@@ -25,13 +25,13 @@ func wait(delta):
 	time = time + delta
 	#print(time)
 	
-	if(time > 0.2):
+	if(time > 0.001):
 		shoot((Vector2(randf_range(50, -50),randf_range(50, -50))).normalized())
 		time = 0
 
 func shoot(direction : Vector2):
 	var bullet = load("res://objects/bullet.tscn").instantiate()
-	bullet.damage = 10
+	bullet.damage = .2
 	bullet.direction = direction
 	bullet.shooter = self
 	bullet.global_position = global_position

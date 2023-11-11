@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://c081ih5iflxbs"]
 
-[ext_resource type="Texture2D" uid="uid://bivtm3du180x6" path="res://sprites/32x32 topdown tileset Spreadsheet V1-1.png" id="1_h3834"]
+[ext_resource type="Texture2D" uid="uid://bivtm3du180x6" path="res://scripts/32x32 topdown tileset Spreadsheet V1-1.png" id="1_v2oiq"]
 [ext_resource type="Texture2D" uid="uid://dmtf5afts6ia5" path="res://sprites/16x16 roguelike tileset Spreadsheet 1-5.png" id="2_mc8sb"]
 [ext_resource type="PackedScene" uid="uid://cm60wbxx1t2iw" path="res://objects/enemy.tscn" id="5_dolu6"]
 [ext_resource type="PackedScene" path="res://objects/EnemyTracker.tscn" id="5_m4mnt"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://chcylrt0adxst" path="res://objects/attack enemy.tscn" id="6_7di6q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d070f"]
-texture = ExtResource("1_h3834")
+texture = ExtResource("1_v2oiq")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
