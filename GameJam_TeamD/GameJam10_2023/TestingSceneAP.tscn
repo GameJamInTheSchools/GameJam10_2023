@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0pwk41gs2yr7"]
+[gd_scene load_steps=4 format=3 uid="uid://b0pwk41gs2yr7"]
 
 [ext_resource type="PackedScene" uid="uid://b71miyarh4aql" path="res://objects/topdown_player.tscn" id="1_otcga"]
 [ext_resource type="PackedScene" uid="uid://ugcqvi6grgg1" path="res://objects/DeathZone.tscn" id="2_qci76"]
+[ext_resource type="PackedScene" uid="uid://cm60wbxx1t2iw" path="res://objects/enemy.tscn" id="3_18ocr"]
 
 [node name="TestingSceneAP" type="Node2D"]
 
@@ -12,4 +13,5 @@ position = Vector2(371, 263)
 position = Vector2(443, 259)
 scale = Vector2(-3.53059, 6.90386)
 
-[connection signal="body_entered" from="DeathZone" to="DeathZone" method="_on_body_entered"]
+[node name="enemy" parent="." instance=ExtResource("3_18ocr")]
+position = Vector2(307, 265)
